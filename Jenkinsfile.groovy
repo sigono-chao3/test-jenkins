@@ -7,7 +7,7 @@ node() {
 	}
 	stage ("First") {
 		echo 'First wow'
-		sh "$WORKSPACE/nope.sh"
+		sh script: "exit 1"
 	}
 	stage ("Second") {
 		echo 'Second wow'
