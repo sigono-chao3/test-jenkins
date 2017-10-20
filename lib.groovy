@@ -1,5 +1,6 @@
 def func1(String para)	{
-	echo para
+	currentBuild.result = 'ABORTED'
+    error(para)
 }
 
 return this
