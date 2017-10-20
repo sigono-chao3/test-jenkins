@@ -7,7 +7,7 @@ node() {
 	}
 	stage ("First") {
 		echo 'First wow'
-		std = sh script: "ls", returnStdout: true
+		def std = sh script: "ls", returnStdout: true
 		echo $std
 	}
 	stage ("Second") {
