@@ -7,8 +7,8 @@ node() {
 	}
 	stage ("First") {
 		echo 'First wow'
-		std = sh script: "ls", returnStdout: true
-		echo "$std"
+		def pipeline = load "${pwd()}/lib.groovy"
+		pipeline.func1("wonder")
 	}
 	stage ("Second") {
 		echo 'Second wow'
