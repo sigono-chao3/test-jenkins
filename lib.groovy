@@ -1,3 +1,3 @@
-def func1(para)	{
+def func1(String para)	{
 	echo para
 }
